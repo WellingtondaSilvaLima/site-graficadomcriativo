@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Sugo Clássica";
+  src: local(Sugo), url(sugo_pro_display/Sugo-Pro-Classic-Regular-trial.ttf);
+}
+
+@font-face {
+  font-family: "Sugo Título";
+  src: local(Sugo), url(sugo_pro_display/Sugo-Pro-Display-Bold-trial.ttf);
+}
+
+@font-face {
+  font-family: "Sugo Texto";
+  src: local(Sugo), url(sugo_pro_display/Sugo-Pro-Display-Light-trial.ttf);
+}
+
+:root {
+  --cor-primaria: #5E17EB;
+  --cor-secundaria: #26A9E0;
+  --cor-padrao: azure;
+}
+
+.fonte-classica {
+  font-family: "Sugo Clássica";
+  font-size: 1.3rem;
+}
+
+.fonte-texto {
+  font-family: "Sugo Texto";
+  font-size: 1.3rem;
+}
+
+.fonte-titulo {
+  font-family: "Sugo Título";
+  font-size: 4rem;
+  color: var(--cor-primaria);
+  text-shadow:
+    -2px 0 0 #00ffff,
+    2px 0 0 #ff00ff;
+}
+
+nav {
+  background-color: var(--cor-padrao);
+}
+
+.container-fluid a {
+  color: var(--cor-primaria);
+}
+
+.container-fluid a img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.tamanho-logo {
+  width: 30vw;
+}
+
+.parallax {
+  background-image: url(assets/hero-bg.svg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#a-dom {
+  background-color: var(--cor-padrao);
+}
+
+.borda-cor {
+  border: 2px solid var(--cor-primaria);
+}
+
+.fundo-criatividades {
+  background-color: var(--cor-primaria);
+}
+
+.fonte-titulo-criatividades {
+  font-family: "Sugo Título";
+  font-size: 4rem;
+  color: var(--cor-padrao);
+  padding-top: 2rem;
+}
+
+.fundo-cards {
+  background-color: var(--cor-padrao);
+}
+
+.fonte-titulo-cards {
+  font-family: "Sugo Título";
+  font-size: 2rem;
+  color: var(--cor-primaria);
+}
+
+.fundo-call-to-action {
+  background: 
+        url(assets/fundo-call-to-action.svg) no-repeat center center/cover,
+        rgba(0, 0, 0, 0.5);
+  width: 98.85vw;
+  height: 40vh;
+}
