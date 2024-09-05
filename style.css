@@ -15,6 +15,7 @@
 
 :root {
   --cor-primaria: #5E17EB;
+  --cor-primaria-claro: rgba(94, 23, 235, 0.8);
   --cor-secundaria: #26A9E0;
   --cor-padrao: azure;
 }
@@ -29,7 +30,14 @@
   font-size: 1.3rem;
 }
 
-.fonte-titulo {
+.fonte-funcao {
+  font-family: "Sugo Texto";
+  font-size: 1rem;
+  margin-top: -0.6rem;
+}
+
+.fonte-titulo,
+.fonte-titulo-os-criativos {
   font-family: "Sugo Título";
   font-size: 4rem;
   color: var(--cor-primaria);
@@ -38,7 +46,25 @@
     2px 0 0 #ff00ff;
 }
 
-nav {
+.fonte-titulos-fale-conosco {
+  font-family: "Sugo Clássica";
+  font-size: 3rem;
+  color: var(--cor-padrao);
+}
+
+.fonte-footer {
+  font-family: "Sugo Clássica";
+  font-size: 1.3rem;
+  color: var(--cor-padrao);
+}
+
+body,
+.fundo-footer {
+  background-color: var(--cor-primaria-claro);
+}
+
+nav,
+.fundo-os-criativos {
   background-color: var(--cor-padrao);
 }
 
@@ -75,10 +101,6 @@ nav {
   border: 2px solid var(--cor-primaria);
 }
 
-.fundo-criatividades {
-  background-color: var(--cor-primaria);
-}
-
 .fonte-titulo-criatividades {
   font-family: "Sugo Título";
   font-size: 4rem;
@@ -96,10 +118,75 @@ nav {
   color: var(--cor-primaria);
 }
 
-.fundo-call-to-action {
-  background: 
-        url(assets/fundo-call-to-action.svg) no-repeat center center/cover,
-        rgba(0, 0, 0, 0.5);
-  width: 98.85vw;
+.parallax-call-to-action {
+  background-image: url(assets/bg-call-to-action.svg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ajuste-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.botao {
+  background-color: var(--cor-primaria);
+  color: var(--cor-padrao);
+  box-shadow: 2px 0 0 #ff00ff,
+    -2px 0 0 #00ffff;
+  transition: all .3s;
+}
+
+.botao:hover,
+.botao:active {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-padrao);
+  transition: all .3s;
+}
+
+.card-criativos {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 2px solid var(--cor-primaria);
+  box-shadow: 2px 0 0 #ff00ff,
+    -2px 0 0 #00ffff;
+  display: flex;
+  transition: all .3s;
+}
+
+.card-criativos:hover {
+  scale: 1.1;
+  transition: all .3s;
+}
+
+.cor-icone {
+  color: var(--cor-padrao);
+}
+
+@media (max-width: 380px) {
+  .botao {
+    font-size: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .botao {
+    font-size: 0.8rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
 }
