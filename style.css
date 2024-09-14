@@ -68,6 +68,10 @@ nav,
   background-color: var(--cor-padrao);
 }
 
+.animacao-nav {
+  animation: flipInX 2s;
+}
+
 .container-fluid a {
   color: var(--cor-primaria);
 }
@@ -93,12 +97,22 @@ nav,
   justify-content: center;
 }
 
+.animacao-logo {
+  animation: backInDown;
+  animation-duration: 2s;
+}
+
 #a-dom {
   background-color: var(--cor-padrao);
 }
 
 .borda-cor {
   border: 2px solid var(--cor-primaria);
+}
+
+.animacao-a-dom.visivel,
+.animacao-criatividades.visivel {
+  animation: fadeInUp 2s;
 }
 
 .fonte-titulo-criatividades {
@@ -151,6 +165,11 @@ nav,
   transition: all .3s;
 }
 
+.animacao-call-to-action.visivel,
+.animacao-os-criativos.visivel {
+  animation: flipInX 2s;
+}
+
 .card-criativos {
   width: 12rem;
   height: 12rem;
@@ -169,6 +188,22 @@ nav,
 
 .cor-icone {
   color: var(--cor-padrao);
+}
+
+.animacao-os-criativos-1.visivel {
+  animation: rotateInDownLeft 1s;
+}
+.animacao-os-criativos-2.visivel {
+  animation: rotateInDownLeft 2s;
+}
+.animacao-os-criativos-3.visivel {
+  animation: rotateInDownLeft 3s;
+}
+.animacao-os-criativos-4.visivel {
+  animation: rotateInDownLeft 4s;
+}
+.animacao-os-criativos-5.visivel {
+  animation: rotateInDownLeft 5s;
 }
 
 @media (max-width: 380px) {
