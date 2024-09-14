@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Sugo Clássica";
+  src: local(Sugo), url(sugo_pro_display/Sugo-Pro-Classic-Regular-trial.ttf);
+}
+
+@font-face {
+  font-family: "Sugo Título";
+  src: local(Sugo), url(sugo_pro_display/Sugo-Pro-Display-Bold-trial.ttf);
+}
+
+@font-face {
+  font-family: "Sugo Texto";
+  src: local(Sugo), url(sugo_pro_display/Sugo-Pro-Display-Light-trial.ttf);
+}
+
+:root {
+  --cor-primaria: #5E17EB;
+  --cor-primaria-claro: rgba(94, 23, 235, 0.8);
+  --cor-secundaria: #26A9E0;
+  --cor-padrao: azure;
+}
+
+body {
+  background-color: var(--cor-padrao) !important;
+}
+
+.principal {
+  margin-top: 10rem;
+}
