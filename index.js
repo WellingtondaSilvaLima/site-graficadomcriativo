@@ -111,12 +111,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const target = document.querySelector('.animacao-os-criativos-5');
+  const target = document.querySelector('#rodape');
+  const btnWhats = document.querySelector('.whatsapp-btn')
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        target.classList.add('visivel');
+        btnWhats.classList.add('remover');
+      }
+      else {
+        btnWhats.classList.remove('remover');
       }
     });
   }, { threshold: 0.03 }); // Ajuste o threshold conforme necessário

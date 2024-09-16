@@ -27,3 +27,17 @@ body {
 .principal {
   margin-top: 10rem;
 }
+
+.fonte-titulo {
+  font-family: "Sugo Título";
+  font-size: 3rem;
+  color: var(--cor-primaria);
+  text-shadow:
+    -2px 0 0 #00ffff,
+    2px 0 0 #ff00ff;
+}
+
+.fonte-texto {
+  font-family: "Sugo Texto" !important;
+  font-size: 1.3rem !important;
+}
